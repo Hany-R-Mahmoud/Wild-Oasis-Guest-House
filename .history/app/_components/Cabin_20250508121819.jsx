@@ -8,9 +8,9 @@ function Cabin({ cabin }) {
 
   return (
     // <div className="grid grid-cols-[3fr_4fr] gap-20 border border-primary-800 py-3 px-10 mb-24">
-    <div className="flex flex-col md:flex-row  border border-primary-800 py-3 px-10 mb-24 gap-8">
+    <div className="flex  border border-primary-800 py-3 px-10 mb-24">
       {/* <div className="relative scale-[1.15] -translate-x-3"> */}
-      <div className="relative  aspect-square basis-full">
+      <div className="relative  aspect-square">
         <Image
           className="object-cover"
           src={image}
@@ -23,7 +23,7 @@ function Cabin({ cabin }) {
         {/* <h3 className="text-accent-100 font-black text-7xl mb-5 translate-x-[-254px] bg-primary-950 p-6 pb-1 w-[150%]">
           Cabin {name}
         </h3> */}
-        <h3 className="text-accent-100 font-black text-7xl mb-5  bg-primary-950 p-6 pb-1 ">
+        <h3 className="text-accent-100 font-black text-7xl mb-5  bg-primary-950 p-6 pb-1 w-[150%]">
           Cabin {name}
         </h3>
 

@@ -16,7 +16,7 @@ function CabinCard({ cabin }) {
       </div>
 
       {/* <div className="flex-grow"> */}
-      <div className="flex flex-col justify-between items-center text-center">
+      <div className="flex flex-col justify-between items-center">
         <div className="pt-5 pb-4 px-7 bg-primary-950">
           <h3 className="text-accent-500 font-semibold text-2xl mb-3">
             Cabin {name}
@@ -29,7 +29,7 @@ function CabinCard({ cabin }) {
             </p>
           </div>
 
-          <p className="flex gap-3  items-baseline">
+          <p className="flex gap-3 justify-end items-baseline">
             {discount > 0 ? (
               <>
                 <span className="text-3xl font-[350]">

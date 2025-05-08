@@ -29,7 +29,7 @@ function CabinCard({ cabin }) {
             </p>
           </div>
 
-          <p className="flex gap-3  items-baseline">
+          <p className="flex gap-3 justify-end items-baseline">
             {discount > 0 ? (
               <>
                 <span className="text-3xl font-[350]">

@@ -5,7 +5,7 @@ function CabinCard({ cabin }) {
   const { id, name, maxCapacity, regularPrice, discount, image } = cabin;
 
   return (
-    <div className="flex border-primary-800 border flex-col ">
+    <div className="flex border-primary-800 border ">
       <div className="flex-1 relative aspect-square">
         <Image
           src={image}
@@ -16,7 +16,7 @@ function CabinCard({ cabin }) {
       </div>
 
       {/* <div className="flex-grow"> */}
-      <div className="flex flex-col justify-between items-center text-center">
+      <div className="flex flex-col justify-between">
         <div className="pt-5 pb-4 px-7 bg-primary-950">
           <h3 className="text-accent-500 font-semibold text-2xl mb-3">
             Cabin {name}
@@ -29,7 +29,7 @@ function CabinCard({ cabin }) {
             </p>
           </div>
 
-          <p className="flex gap-3  items-baseline">
+          <p className="flex gap-3 justify-end items-baseline">
             {discount > 0 ? (
               <>
                 <span className="text-3xl font-[350]">
@@ -46,11 +46,11 @@ function CabinCard({ cabin }) {
           </p>
         </div>
 
-        <div className="bg-primary-950 border-t border-x border-t-primary-800 border-x-primary-800 text-right hover:bg-accent-600 transition-all hover:text-primary-900">
+        <div className="bg-primary-950 border-y border-y-primary-800 text-right hover:bg-accent-600 transition-all hover:text-primary-900">
           <Link
             href={`/cabins/${id}`}
             // className="border-l border-primary-800 py-4 px-6 inline-block hover:bg-accent-600 transition-all hover:text-primary-900"
-            className=" py-4 px-6 inline-block "
+            className=" py-4 px-6 inline-block hover:bg-accent-600 transition-all hover:text-primary-900"
           >
             Details & reservation &rarr;
           </Link>
