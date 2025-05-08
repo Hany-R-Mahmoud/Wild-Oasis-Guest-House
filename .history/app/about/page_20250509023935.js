@@ -57,18 +57,6 @@ export default async function Page() {
         Managed by our family since 1962
       </h1>
       <div className="flex flex-col md:flex-row gap-3 ">
-        <div className=" relative md:order-last ">
-          <Image
-            src={about2}
-            alt="Family that manages The Wild Oasis"
-            className="object-contain"
-            placeholder="blur"
-
-            // fill
-            // can't add placeholder here because it is not statically imported
-          />
-        </div>
-
         <div>
           <div className="space-y-8">
             <p>
@@ -95,6 +83,17 @@ export default async function Page() {
               </Link>
             </div>
           </div>
+        </div>
+        <div className=" relative ">
+          <Image
+            src={about2}
+            alt="Family that manages The Wild Oasis"
+            className="object-contain"
+            placeholder="blur"
+
+            // fill
+            // can't add placeholder here because it is not statically imported
+          />
         </div>
       </div>
     </div>

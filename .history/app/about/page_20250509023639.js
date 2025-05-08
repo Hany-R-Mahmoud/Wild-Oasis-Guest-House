@@ -57,14 +57,12 @@ export default async function Page() {
         Managed by our family since 1962
       </h1>
       <div className="flex flex-col md:flex-row gap-3 ">
-        <div className=" relative md:order-last ">
+        <div className=" relative ">
           <Image
-            src={about2}
+            src="/about-2.jpg"
             alt="Family that manages The Wild Oasis"
             className="object-contain"
-            placeholder="blur"
-
-            // fill
+            fill
             // can't add placeholder here because it is not statically imported
           />
         </div>

@@ -57,7 +57,7 @@ export default async function Page() {
         Managed by our family since 1962
       </h1>
       <div className="flex flex-col md:flex-row gap-3 ">
-        <div className=" relative md:order-last ">
+        <div className=" relative ">
           <Image
             src={about2}
             alt="Family that manages The Wild Oasis"

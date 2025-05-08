@@ -12,8 +12,7 @@ export default async function Navigation() {
 
   return (
     <nav className="z-10 text-xl">
-      <ul className="flex justify-between items-center max-w-7xl mx-auto gap-16">
-        {/* <ul className="flex flex-col md:flex-row justify-between items-center max-w-7xl mx-auto gap-16"> */}
+      <ul className="flex flex-col md:flex-row justify-between items-center max-w-7xl mx-auto gap-16">
         <li>
           <Link
             href="/cabins"

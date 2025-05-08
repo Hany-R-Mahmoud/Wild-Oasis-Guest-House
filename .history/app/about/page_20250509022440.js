@@ -15,12 +15,9 @@ export default async function Page() {
 
   return (
     <div className="flex flex-col gap-8 text-lg items-center">
-      {" "}
-      <h1 className="text-4xl mt-5 text-accent-400 font-medium">
-        Welcome to The Wild Oasis
-      </h1>
+      {/* <div className="grid grid-cols-5 gap-x-24 gap-y-32 text-lg items-center"> */}
       <div className="flex flex-col md:flex-row gap-3 ">
-        <div className=" relative ">
+        <div className="col-span-2 relative ">
           <Image
             src={about1}
             alt="Family sitting around a fire pit in front of cabin"
@@ -29,7 +26,11 @@ export default async function Page() {
             // fill
           />
         </div>{" "}
-        <div>
+        <div className="col-span-3">
+          <h1 className="text-4xl mb-10 text-accent-400 font-medium">
+            Welcome to The Wild Oasis
+          </h1>
+
           <div className="space-y-8">
             <p>
               Where nature&apos;s beauty and comfortable living blend
@@ -52,24 +53,23 @@ export default async function Page() {
             </p>
           </div>
         </div>
-      </div>{" "}
-      <h1 className="text-4xl my-5 text-accent-400 font-medium">
-        Managed by our family since 1962
-      </h1>
+      </div>
       <div className="flex flex-col md:flex-row gap-3 ">
-        <div className=" relative md:order-last ">
+        <div className="col-span-2 relative aspect-square">
           <Image
-            src={about2}
+            src="/about-2.jpg"
             alt="Family that manages The Wild Oasis"
             className="object-contain"
-            placeholder="blur"
-
-            // fill
+            fill
             // can't add placeholder here because it is not statically imported
           />
         </div>
 
-        <div>
+        <div className="col-span-3">
+          <h1 className="text-4xl mb-10 text-accent-400 font-medium">
+            Managed by our family since 1962
+          </h1>
+
           <div className="space-y-8">
             <p>
               Since 1962, The Wild Oasis has been a cherished family-run
@@ -86,7 +86,7 @@ export default async function Page() {
               every visit is like coming home.
             </p>
 
-            <div className="text-center">
+            <div>
               <Link
                 href="/cabins"
                 className="inline-block mt-4 bg-accent-500 px-8 py-5 text-primary-800 text-lg font-semibold hover:bg-accent-600 transition-all"

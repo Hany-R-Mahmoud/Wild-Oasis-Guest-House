@@ -19,6 +19,7 @@ export default async function Page() {
       <h1 className="text-4xl mt-5 text-accent-400 font-medium">
         Welcome to The Wild Oasis
       </h1>
+      {/* <div className="grid grid-cols-5 gap-x-24 gap-y-32 text-lg items-center"> */}
       <div className="flex flex-col md:flex-row gap-3 ">
         <div className=" relative ">
           <Image
@@ -29,7 +30,7 @@ export default async function Page() {
             // fill
           />
         </div>{" "}
-        <div>
+        <div className="">
           <div className="space-y-8">
             <p>
               Where nature&apos;s beauty and comfortable living blend
@@ -57,14 +58,12 @@ export default async function Page() {
         Managed by our family since 1962
       </h1>
       <div className="flex flex-col md:flex-row gap-3 ">
-        <div className=" relative md:order-last ">
+        <div className=" relative aspect-square">
           <Image
-            src={about2}
+            src="/about-2.jpg"
             alt="Family that manages The Wild Oasis"
             className="object-contain"
-            placeholder="blur"
-
-            // fill
+            fill
             // can't add placeholder here because it is not statically imported
           />
         </div>
