@@ -12,7 +12,7 @@ export default async function Navigation() {
 
   return (
     <nav className="z-10 text-xl">
-      <ul className="flex justify-between items-center max-w-7xl mx-auto gap-4">
+      <ul className="flex justify-between items-center max-w-7xl mx-auto ">
         {/* <ul className="flex flex-col md:flex-row justify-between items-center max-w-7xl mx-auto gap-16"> */}
         <li>
           <Link
@@ -48,7 +48,7 @@ export default async function Navigation() {
                 className=" h-8 rounded-full"
                 referrerPolicy="no-referrer"
               />
-              <span>{session.user.name.split(" ").at(0)}</span>
+              <span>{session.user.name}</span>
             </Link>
           ) : (
             <Link

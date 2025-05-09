@@ -48,7 +48,7 @@ export default async function Navigation() {
                 className=" h-8 rounded-full"
                 referrerPolicy="no-referrer"
               />
-              <span>{session.user.name.split(" ").at(0)}</span>
+              <span>{session.user.name}</span>
             </Link>
           ) : (
             <Link

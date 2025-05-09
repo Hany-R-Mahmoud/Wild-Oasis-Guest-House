@@ -3,7 +3,6 @@ import Image from "next/image";
 import { useState } from "react";
 import { updateProfile } from "../_lib/actions";
 import { useFormStatus } from "react-dom";
-import { FlagIcon } from "@heroicons/react/24/solid";
 
 function UpdateProfileForm({ children, guest }) {
   const [count, setCount] = useState();
@@ -39,16 +38,12 @@ function UpdateProfileForm({ children, guest }) {
         <div className="flex items-center justify-between">
           <label htmlFor="nationality">Where are you from?</label>
           <div className="relative aspect-square h-5">
-            {countryFlag ? (
-              <Image
-                src={countryFlag}
-                alt="Country flag"
-                className=" rounded-sm object-cover"
-                fill
-              />
-            ) : (
-              <FlagIcon />
-            )}
+            <Image
+              src={countryFlag || ""}
+              alt="Country flag"
+              className=" rounded-sm object-cover"
+              fill
+            />
           </div>
         </div>
 
