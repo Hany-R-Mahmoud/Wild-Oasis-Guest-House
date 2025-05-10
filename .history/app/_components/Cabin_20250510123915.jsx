@@ -18,6 +18,9 @@ function Cabin({ cabin }) {
       </div>
 
       <div className="py-3 px-10">
+        {/* <h3 className="text-accent-100 font-black text-7xl mb-5 translate-x-[-254px] bg-primary-950 p-6 pb-1 w-[150%]">
+          Cabin {name}
+        </h3> */}
         <h3 className="text-accent-100 font-black text-7xl mb-5  bg-primary-950 p-6 pb-1 ">
           Cabin {name}
         </h3>
